@@ -21,7 +21,7 @@ public class Encuesta extends AppCompatActivity {
     private Button mEcuesta;
     private TextView mUserName;
     private EditText mP1;
-    private CheckBox chkSoccer, chkBike, chkWalk;
+    private CheckBox chkFutbol, chkBasket, chkBoxeo;
     private RadioButton rdbSi, rdbNo;
     private Context mContext;
 
@@ -44,9 +44,9 @@ public class Encuesta extends AppCompatActivity {
         //P1
         mP1 = (EditText) findViewById(R.id.p1);
         //P2
-        chkSoccer = (CheckBox) findViewById(R.id.chkSoccer);
-        chkBike = (CheckBox) findViewById(R.id.chkBike);
-        chkWalk = (CheckBox) findViewById(R.id.chkWalk);
+        chkFutbol = (CheckBox) findViewById(R.id.chkFutbol);
+        chkBasket = (CheckBox) findViewById(R.id.chkBasket);
+        chkBoxeo = (CheckBox) findViewById(R.id.chkBoxeo);
         //p3
         rdbSi = (RadioButton) findViewById(R.id.rdbOp1Yes);
         rdbNo = (RadioButton) findViewById(R.id.rdbOp1No);
@@ -68,9 +68,9 @@ public class Encuesta extends AppCompatActivity {
         intent.putExtra(UserControler.USER_YEY, userName);
         intent.putExtra(UserControler.NAME_COMPLETE ,nameComplete );
         intent.putExtra(UserControler.P1_KEY_TXT ,mP1.getText().toString());
-        intent.putExtra(UserControler.P2_KEY_SCC,chkSoccer.isChecked());
-        intent.putExtra(UserControler.P2_KEY_BK,chkBike.isChecked());
-        intent.putExtra(UserControler.P2_KEY_WK,chkWalk.isChecked());
+        intent.putExtra(UserControler.P2_KEY_SCC,chkFutbol.isChecked());
+        intent.putExtra(UserControler.P2_KEY_BK,chkBasket.isChecked());
+        intent.putExtra(UserControler.P2_KEY_WK,chkBoxeo.isChecked());
         intent.putExtra(UserControler.P3_KEY_OPT,rdbSi.isSelected()?true:false);
         startActivity(intent);
         finish();

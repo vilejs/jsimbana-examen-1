@@ -61,21 +61,21 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/chkSoccer"
+                android:id="@+id/chkFutbol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="@string/encuesta_Soccer" />
 
             <CheckBox
-                android:id="@+id/chkBike"
+                android:id="@+id/chkBasket"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="@string/encuesta_Bike" />
 
             <CheckBox
-                android:id="@+id/chkWalk"
+                android:id="@+id/chkBoxeo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
